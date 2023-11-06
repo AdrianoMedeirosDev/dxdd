@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    max-width: 1920px;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+header {
+    width: 100%;
+    padding: 13px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    z-index: 999;
+    transition: 0.5s;
+}
+
+header.rolagem {
+    background-color: #ffffff;
+    padding: 2px 4%;
+}
+
+header.rolagem a, header.rolagem i{
+    color: rgb(255, 255, 255);
+}
+
+.logo-image {
+    text-align: center;
+    align-items: center;
+}
+.logo-image img {
+    width: 200px;
+    max-width: 100%;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.logo-image img:hover {
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.container-flex {
+    display: grid;
+    gap: 32px;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+}
+
+.container-first {
+    margin: 10px;
+    width: 960px;
+    height: 540px;
+    background-image: url(../img/pokemon.png);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.container-first img {
+    margin-right: 100px;
+}
+
+.container-grid  {
+    background-image: url(../img/fundo.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container-grid img{
+    width: 200px;
+    height: 200px;
+}
+
+.container-inferior {
+    display: grid;
+    grid-template: 180px / 180px 180px 180px 180px 180px 180px 180px 180px;
+    gap: 5px;
+    margin-top: 10px;
+    
+}
+
